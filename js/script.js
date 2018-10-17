@@ -8,8 +8,10 @@ var afficherSymbole = function(cell) {
 	if (cell.textContent === '') {
 		// 2 - poser symbole J1 ou j2
     if (tourDuJoueur1) {
+			cell.textContent = "x";
 			cell.classList.add('rouge');
 		} else {
+			cell.textContent = "o";
 			cell.classList.add('bleu');
 		}
 		// 4 - changer le joueur courant
@@ -24,9 +26,9 @@ var verifierCombinaisons = function() {
 	// 3 - check combinaison gagnante
 	combinaisons.forEach(function(combinaison) {
 		if (
-			cells[combinaison[0]].classList[0] === cells[combinaison[1]].classList[1] &&
-			cells[combinaison[1]].classList[1] === cells[combinaison[2]].classList[2] &&
-			cells[combinaison[0]].classList[0] !== ''
+			cells[combinaison[0]].textContent === cells[combinaison[1]].textContent &&
+			cells[combinaison[1]].textContent === cells[combinaison[2]].textContent &&
+			cells[combinaison[0]].textContent !== ''
 		) {
 			console.log("T'as gagné bravo");
 			var currentPlayer;
@@ -52,4 +54,4 @@ cells.forEach(function(cell) {
 
 function refreshPage(){
     window.location.reload();
-} 
+}

@@ -12,6 +12,10 @@ header {
   top: 10px;
 
 }
+
+.cell {
+  color: transparent;
+}
 .morpion {
   width: 500px;
   height: 500px;
