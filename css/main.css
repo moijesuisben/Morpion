@@ -4,8 +4,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-family: 'Merriweather', serif;
 }
 
+header {
+  position: absolute;
+  top: 10px;
+
+}
 .morpion {
   width: 500px;
   height: 500px;
@@ -22,4 +28,19 @@ body {
 .cell {
   flex: 1;
   border: 5px solid white;
+}
+
+
+.rouge {
+  background-image: url("../../media/green-cross.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bleu {
+  background-image: url("../../media/pink-circle.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
