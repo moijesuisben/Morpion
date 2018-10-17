@@ -36,14 +36,14 @@ header {
 
 
 .rouge {
-  background-image: url("../../media/green-cross.png");
+  background-image: url("../media/green-cross.png");
   background-size: 100px 100px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bleu {
-  background-image: url("../../media/pink-circle.png");
+  background-image: url("../media/pink-circle.png");
   background-size: 100px 100px;
   background-repeat: no-repeat;
   background-position: center;
