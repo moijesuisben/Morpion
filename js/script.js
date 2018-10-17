@@ -49,3 +49,7 @@ cells.forEach(function(cell) {
 		}
 	});
 });
+
+function refreshPage(){
+    window.location.reload();
+} 

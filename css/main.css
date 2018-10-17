@@ -44,3 +44,34 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.button {
+  position: absolute;
+  bottom: 50px;
+  height: 50px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+}
+
+#button-refresh {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 200px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #30a0e7;
+  color: #30a0e7;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#button-refresh:hover {
+  color: white;
+  background: #30a0e7;
+}
